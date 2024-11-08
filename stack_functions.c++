@@ -40,4 +40,11 @@ int pop(int S[]){
     }
     return 0;
  }
+ //STACK IS EMPTY
+ void stackisempty(){
+    if(top==-1)
+        cout<<"Stack is Empty";
+    else
+    cout<<"Stack is NOT Empty";
+ }
  //ELIZABETH'S BRANCH STARTS HERE
