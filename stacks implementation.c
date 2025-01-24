@@ -60,4 +60,18 @@ int StackIsEmpty(struct Stack* stack) {
 int StackIsFull(struct Stack* stack) {
     return stack->top == MAX_SIZE - 1;
 }
+int main() {
+    struct Stack* stack = createStack();
+    push(stack, 10);
+    push(stack, 20);
+    push(stack, 30);
+    display(stack);
+    printf("Top element: %d\n", topOfStack(stack));
+    printf("Stack size: %d\n", sizeOfStack(stack));
+    pop(stack);
+    display(stack);
+    printf("Stack size: %d\n", sizeOfStack(stack));
+    free(stack);
+    return 0;
+}
 
